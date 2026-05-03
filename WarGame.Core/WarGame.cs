@@ -22,7 +22,7 @@ namespace WarGame.Core
         // Players involved in the last tie
         public List<string> LastTiePlayers { get; private set; } = new List<string>();
 
-        // Creates players and deals the cards for the round
+        // Creates the game and sets up players and deals the cards for the round
         public WarGame(int numberOfPlayers)
         {
             for (int i = 1; i <= numberOfPlayers; i++)

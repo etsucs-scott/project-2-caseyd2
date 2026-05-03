@@ -1,43 +1,41 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/hZIAsDPT)
-# CSCI 1260 — Project
+# War Game Simulation
 
-## Project Instructions
-All project requirements, grading criteria, and submission details are provided on **D2L**.  
-Refer to D2L as the *authoritative source* for this assignment.
+## Overview
+This program simulates the card game War in the console.
 
-This repository is intentionally minimal. You are responsible for:
-- Creating the solution and projects
-- Designing the class structure
-- Implementing the required functionality
+This project is split into two parts.
+    - WarGame.Core contains all the game logic
+	- WarGame.Console runs the program and prints the output
 
----
+## How to Run
+Run the program in Visual studio using start or in the terminal.
 
-## Getting Started (CLI)
+## How it works
+- The program asks for the number of players (2-4)
+- A 52 card deck is created, shuffled and dealt evenly
+- Each round:
+	- players reveal one card
+	- The highest card wins
+	- All cards go into a pot
+- If there is a tie:
+	- Only tied players play agin
+	- The winner takes the entire pot
+- The game continues until:
+	- One player has all the cards or 10,000 rounds are reached
 
-You may use **Visual Studio**, **VS Code**, or the **terminal**.
-
-### Create a solution
-```bash
-dotnet new sln -n ProjectName
-```
-
-### Create a project (example: console app)
-```bash
-dotnet new console -n ProjectName.App
-```
-
-### Add the project to the solution
-```bash
-dotnet sln add ProjectName.App
-```
-
-### Build and run
-```bash
-dotnet build
-dotnet run --project ProjectName.App
-```
+## Output
+Each round shows:
+- The round number
+- Each player's card
+- The winner of the round
+- Any ties and tiebreakers
+- Current card counts
 
 ## Notes
-- Commit early and commit often.
-- Your repository history is part of your submission.
-- Update this README with build/run instructions specific to your project.
+- Only rank matters
+- Ace is the highest card
+- Cards are added to the back of the winner's hand
+
+## GitHub
+This project was completed for project 2 and submitted via GitHub Classroom.
+

@@ -8,7 +8,7 @@ namespace WarGame.ConsoleApp
     class Program
     {
 
-    // Starts the program and handles the input and output
+    // Program entry point, controls game flow and user interaction
         static void Main(string[] args)
       
             {
@@ -32,11 +32,11 @@ namespace WarGame.ConsoleApp
                     Console.WriteLine("Invalid input.");
                 }
 
-                // Creates a new game with the selected number of players
+                // Creates a new game with the selected number of players and starts the main game loop
                 WarGame.Core.WarGame game = new WarGame.Core.WarGame(numberOfplayers);
                 // Keeps track of the round number
                 int round = 1;
-                // Run the game until a winner is found
+                // Main Game Loop - Runs the game until a winner is found 
                 while (true)
                 {
                 // Round header

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WarGame.Core
 {
-    // Represents the suit of a card
+    // Represents the four suits of cards in a standard deck
     public enum Suit
     {
         Hearts,

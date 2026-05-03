@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WarGame.Core
 {
-    // Represents the rank of a card
+    // Represents the rank of a card from two(lowest) to Ace(highest)
     public enum Rank
     {
         Two = 2,
